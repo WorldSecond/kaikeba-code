@@ -1,4 +1,5 @@
+//二进制友好，图片操作
 const fs = require('fs')
-const rs2 = fs.createReadStream('./img.png')
-const ws2 = fs.createWriteStream('./img2.png')
-rs2.pipe(ws2)
+const rs = fs.createReadStream('./img.png')
+const ws = fs.createWriteStream('./img2.png')
+rs.pipe(ws)
